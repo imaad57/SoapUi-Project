@@ -1203,7 +1203,7 @@ testRunner.testCase.testSuite.project.getTestSuiteByName('TestSuite 1').getTestC
 log.info ("  --  "+testRunner.testCase.getSetupScript());
 log.info ("  --  "+testRunner.testCase.getTearDownScript());
 
-</script></con:config></con:testStep><con:setupScript>log.info "setup"</con:setupScript><con:tearDownScript>log.info "teardown"</con:tearDownScript><con:properties/></con:testCase><con:properties/><con:setupScript>log.info("before")</con:setupScript><con:tearDownScript>log.info("after")</con:tearDownScript></con:testSuite><con:properties><con:property><con:name>NAme</con:name><con:value>iam project property</con:value></con:property></con:properties><con:afterLoadScript>//groovy code can be given at project load script to load setup and teardown scritps from file
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="c0f3dd6a-2fef-414d-9875-1facec7acc38"><con:settings/><con:config><script/></con:config></con:testStep><con:setupScript>log.info "setup"</con:setupScript><con:tearDownScript>log.info "teardown"</con:tearDownScript><con:properties/></con:testCase><con:properties/><con:setupScript>log.info("before")</con:setupScript><con:tearDownScript>log.info("after")</con:tearDownScript></con:testSuite><con:properties><con:property><con:name>NAme</con:name><con:value>iam project property</con:value></con:property></con:properties><con:afterLoadScript>//groovy code can be given at project load script to load setup and teardown scritps from file
 //--------------------------------------------------------------------------------------------------------------------------
 def su = new File("setup.txt").text
 def td  = new File("teardown.txt").text
